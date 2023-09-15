@@ -1,3 +1,8 @@
+# ignore binary files without extension
+*
+!*.*
+!*/
+
 # ignore unsolved(or solving) problems
 solving
 
