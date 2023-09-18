@@ -3,8 +3,9 @@
 !*.*
 !*/
 
-# ignore unsolved(or solving) problems
+# ignore unsolved(or solving, undocumented) problems
 solving
+documenting
 
 # DS_Store
 .DS_Store
