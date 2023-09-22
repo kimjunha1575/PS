@@ -132,9 +132,9 @@ void addParticipant(string str) {
                     if (c) key += career;
                     if (f) key += food;
                     db[key].push_back(score);
-                    
+
                     // query에 대한 처리 전 정렬을 위해 db의 원소에 접근해야하므로
-                    // key들을 미리 보관해둔다. 
+                    // key들을 미리 보관해둔다.
                     keys.insert(key);
                 }
             }
