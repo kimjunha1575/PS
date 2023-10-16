@@ -3,9 +3,12 @@
 !*.*
 !*/
 
+# java class files
+*.class
+
 # ignore unsolved(or solving, undocumented) problems
-solving
-documenting
+solving/
+documenting/
 
 # DS_Store
 .DS_Store
