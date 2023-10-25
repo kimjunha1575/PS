@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 // https://www.acmicpc.net/problem/1747
 
 public class Baekjoon_1747 {
+
   public static void main(String args[]) throws IOException {
     BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
     int N = Integer.parseInt(buf.readLine());
@@ -15,15 +16,15 @@ public class Baekjoon_1747 {
   }
 
   // N이 소수이면서 palindrome인지 확인
-  private static boolean isAns(int N) { return isPalindrome(N) && isPrime(N); }
+  private static boolean isAns(int N) {
+    return isPalindrome(N) && isPrime(N);
+  }
 
   // N이 소수인지 확인
   private static boolean isPrime(int N) {
-    if (N == 1)
-      return false;
+    if (N == 1) return false;
     for (int i = 2; i <= Math.sqrt(N); i++) {
-      if (N % i == 0)
-        return false;
+      if (N % i == 0) return false;
     }
     return true;
   }
